@@ -1,0 +1,52 @@
+buzzer:
+reg0(0) : en
+
+timer:
+reg0(0) : change
+reg1 : input sec
+reg2 : input min
+reg3 : input hor
+reg4 : output sec
+reg5 : output min
+reg6 : output hor
+
+stopwatch:
+en => slv_reg0(0),
+clr => slv_reg0(1),
+msc_out => msc_out,
+sec_out => sec_out,
+min_out => min_out);
+
+counter:
+    clk => S_AXI_ACLK,
+    rst => S_AXI_ARESETN,
+    str => slv_reg0(1),
+    set => slv_reg0(0),
+    en => slv_reg0(2),
+    min_in => slv_reg1,
+    sec_out => sec_out,
+    min_out => min_out,
+    interrput => interrput
+    );
+
+顺序：
+1. 输入min
+2. set = 1
+3. set = 0, str =1, en =1
+
+中断：
+en = 0
+str = 0
+min_in = 0x0000
+set = 1
+set =0
+
+
+    en_alarm => slv_reg7(0),
+    min_in => min_out,
+    hor_in => hor_out,
+    min_set => slv_reg8,
+    hor_set => slv_reg9,
+    min_out => min_alarm_out,
+    hor_out => hor_alarm_out,
+    interrupt => interrupt

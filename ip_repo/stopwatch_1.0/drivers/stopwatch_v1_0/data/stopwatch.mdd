@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER stopwatch
+	OPTION supported_peripherals = (stopwatch);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = stopwatch;
+END DRIVER
