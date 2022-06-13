@@ -1,4 +1,6 @@
 # Digital-Clock
 Digital-Clock based on Zedboard(ZYNQ)
+
 including: Showing time, change time, stopwatch, timer, alarm and bugs :P
+
 Peripherals used: LEDs, Push button, OLED(SSD1306), Passive buzzer
