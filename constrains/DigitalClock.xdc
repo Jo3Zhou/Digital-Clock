@@ -1,0 +1,33 @@
+set_property PACKAGE_PIN W12 [get_ports buzz_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports buzz_out_0]
+set_property IOSTANDARD LVCMOS25 [get_ports {sig_0[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {sig_0[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {sig_0[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {sig_0[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {sig_0[4]}]
+set_property PACKAGE_PIN P16 [get_ports {sig_0[0]}]
+set_property PACKAGE_PIN R16 [get_ports {sig_0[1]}]
+set_property PACKAGE_PIN N15 [get_ports {sig_0[2]}]
+set_property PACKAGE_PIN R18 [get_ports {sig_0[3]}]
+set_property PACKAGE_PIN T18 [get_ports {sig_0[4]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports spi_rtl_io0_io]
+set_property IOSTANDARD LVCMOS33 [get_ports spi_rtl_io1_io]
+
+set_property IOSTANDARD LVCMOS33 [get_ports spi_rtl_sck_io]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_rtl_ss_io[0]}]
+
+set_property PACKAGE_PIN AA12 [get_ports spi_rtl_io0_io]
+set_property PACKAGE_PIN Y11 [get_ports spi_rtl_io1_io]
+
+set_property PACKAGE_PIN AB12 [get_ports spi_rtl_sck_io]
+set_property PACKAGE_PIN AA11 [get_ports {spi_rtl_ss_io[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_o[2]}]
+set_property PACKAGE_PIN U10 [get_ports {GPIO_0_tri_o[0]}]
+set_property PACKAGE_PIN U9 [get_ports {GPIO_1_tri_o[0]}]
+set_property PACKAGE_PIN U12 [get_ports {GPIO_1_tri_o[1]}]
+set_property PACKAGE_PIN U11 [get_ports {GPIO_1_tri_o[2]}]
