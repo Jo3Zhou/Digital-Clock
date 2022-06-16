@@ -1,5 +1,5 @@
 # Digital-Clock
-Digital-Clock based on Zedboard(ZYNQ)
+Digital-Clock based on Zedboard(ZYNQ) vivado 2017.4
 
 including: Showing time, change time, stopwatch, timer, alarm and bugs :P
 
